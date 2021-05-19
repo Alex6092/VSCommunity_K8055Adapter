@@ -10,7 +10,7 @@ int main(int argc, char ** argv)
 
 	carteES->OpenDevice(0);                                 // 3 - Ouvrir le lien avec la carte de votre choix (toutes
                                                           	//     les fonctions visibles dans la documentation de la 
-                                                          	//     carte peuvent être appelées sur cet objet.
+                                                          	//     carte peuvent être appelées sur cet objet).
 	
 	// 4 - Réaliser vos opérations sur la carte (lectures / écritures)
 
