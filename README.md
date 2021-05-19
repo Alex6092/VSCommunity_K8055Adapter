@@ -9,8 +9,8 @@ int main(int argc, char ** argv)
 	K8055Adapter * carteES = K8055Adapter::getInstance();   // 2 - Récupérer l'instance de la classe d'adaptation.
 
 	carteES->OpenDevice(0);                                 // 3 - Ouvrir le lien avec la carte de votre choix (toutes
-                                                          //     les fonctions visibles dans la documentation de la 
-                                                          //     carte peuvent être appelées sur cet objet.
+                                                          	//     les fonctions visibles dans la documentation de la 
+                                                          	//     carte peuvent être appelées sur cet objet.
 	
 	// 4 - Réaliser vos opérations sur la carte (lectures / écritures)
 
