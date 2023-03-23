@@ -153,6 +153,25 @@ int K8055Adapter::init()
 			FreeLibrary(hDLL);
 			return -2;
 		}
+		ReadCounter = (t_func6)GetProcAddress(hDLL, "ReadCounter");
+		if (!ReadCounter)
+		{
+			FreeLibrary(hDLL);
+			return -2;
+		}
+		ResetCounter = (t_func)GetProcAddress(hDLL, "ResetCounter");
+		if (!ResetCounter)
+		{
+			FreeLibrary(hDLL);
+			return -2;
+		}
+		SetCounterDebounceTime = (t_func3)GetProcAddress(hDLL, "SetCounterDebounceTime");
+		if (!SetCounterDebounceTime)
+		{
+			FreeLibrary(hDLL);
+			return -2;
+		}
+
 		return 0;				// ok
 	}
 	return -1;					// error load DLL

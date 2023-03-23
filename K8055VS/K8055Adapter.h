@@ -11,6 +11,7 @@ typedef void(CALLBACK* t_func2)(int *, int *);
 typedef void(CALLBACK* t_func3)(int, int);
 typedef int(CALLBACK* t_func4)(int);
 typedef bool(CALLBACK* t_func5)(int);
+typedef int(CALLBACK* t_func6)(int);
 
 enum
 {
@@ -54,4 +55,7 @@ public:
 	t_func0 SetAllDigital;
 	t_func5 ReadDigitalChannel;
 	t_func1 ReadAllDigital;
+	t_func6 ReadCounter;
+	t_func ResetCounter;
+	t_func3 SetCounterDebounceTime;
 };
